@@ -1,5 +1,8 @@
 package basicTypes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Robert on 06.05.2016.
  */
@@ -10,6 +13,8 @@ public class SolarSystem {
     public String RightAscension;
     public String Declination;
     public double Distance;
+    private List<Sun> SunList;
+    //private List<Planet> PlanetList;
 
     public SolarSystem(){
 
@@ -21,5 +26,18 @@ public class SolarSystem {
         RightAscension = rightAscension;
         Declination = declination;
         Distance = distance;
+        SunList = new ArrayList<Sun>();
+    }
+
+    public void addSun(Sun sun) {
+        SunList.add(sun);
+    }
+
+    public Object getListOfSun() {
+        return SunList;
+    }
+
+    public Object getSizeListOfSun() {
+        return SunList.size();
     }
 }
