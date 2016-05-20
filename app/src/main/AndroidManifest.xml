@@ -15,10 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SolarSytemActivity"
-            android:label="@string/title_activity_solar_sytem"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".PlanetActivity" />
+        <activity android:name=".SolarSystem"></activity>
     </application>
 
 </manifest>
